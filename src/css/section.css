@@ -44,7 +44,7 @@ section:nth-of-type(4) article {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 
     padding: 1rem;
 }
@@ -57,7 +57,7 @@ section:nth-of-type(4) article {
 
 .article-img img {
     display: block;
-    max-width: 19rem;
+    max-width: 18rem;
     margin: 0 auto;
 }
 
@@ -68,16 +68,29 @@ img[alt="laptop"] {
 .article-div {
     display: grid;
     grid-gap: 1rem;
+    text-align: center;
 }
 
-.article-div h2 {
-    text-align: left;
+.article-div button {
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 600px) {
     section:nth-of-type(3) article,
     section:nth-of-type(4) article {
         padding: 5rem;
+    }
+
+    .article-div {
+        text-align: left;
+    }
+
+    .article-div h2 {
+        text-align: left;
+    }
+
+    .article-div button {
+        margin: 0;
     }
 
     .article-img img {

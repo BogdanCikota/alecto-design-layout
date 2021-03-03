@@ -17,13 +17,13 @@ header {
     max-width: 1200px;
     display: grid;
     margin: 0 auto;
-    height: 80vh;
 }
 
 .logo {
     font-size: 1.7rem;
     font-family: "questrialregular", Arial, Helvetica, sans-serif;
     padding: 1rem;
+    display: none;
 }
 
 .logo span {
@@ -33,7 +33,8 @@ header {
 
 nav ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 }
 
 nav ul li {
@@ -118,8 +119,16 @@ header button {
         grid-template-columns: 1.5fr 1fr;
     }
 
-    .header-container {
-        height: 60vh;
+    .logo {
+        display: block;
+    }
+
+    nav ul {
+        grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    }
+
+    .dots-container {
+        margin-top: 3rem;
     }
 
     .middle h1 {
@@ -134,5 +143,11 @@ header button {
 
     header button {
         margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-height: 600px) {
+    .carousel {
+        margin-top: 6rem;
     }
 }
