@@ -39,40 +39,6 @@ for (let i = 0; i < dots.length; i++) {
 
 }
 
-//---------touch----------
-
-leftArrow.addEventListener('touchmove', () => {
-
-    if (counter > 1) {
-        header.style = `background-image: url('assets/images/carousel/nature${--counter}.jpeg')`;
-    } else {
-        counter = 5;
-        header.style = `background-image: url('assets/images/carousel/nature${counter}.jpeg')`;
-    }
-
-});
-
-rightArrow.addEventListener('touchmove', () => {
-    setInterval(function () { }, 3000);
-    if (counter < 5) {
-        header.style = `background-image: url('assets/images/carousel/nature${++counter}.jpeg')`;
-    } else {
-        counter = 1;
-        header.style = `background-image: url('assets/images/carousel/nature${counter}.jpeg')`;
-    }
-
-});
-
-
-for (let i = 0; i < dots.length; i++) {
-    const dot = dots[i];
-    dot.addEventListener('touchmove', () => {
-        counter = i + 1;
-        header.style = `background-image: url('assets/images/carousel/nature${counter}.jpeg')`;
-    });
-
-}
-
 
 //---------interval----------
 

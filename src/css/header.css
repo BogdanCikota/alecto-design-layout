@@ -9,7 +9,7 @@
 header {
     color: white;
     background: rgb(110, 110, 110);
-    height: 100vh;
+    padding-bottom: 1rem;
     background-size: cover;
 }
 
@@ -114,6 +114,8 @@ header button {
 }
 
 @media only screen and (min-width: 600px) {
+   
+
     nav {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
@@ -147,6 +149,10 @@ header button {
 }
 
 @media only screen and (min-height: 600px) {
+    header {
+        height: 100vh;
+    }
+    
     .carousel {
         margin-top: 6rem;
     }
