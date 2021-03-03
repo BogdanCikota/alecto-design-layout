@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap");
+@import "card.css";
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-container hr {
+    width: 2rem;
+    border: 1px solid rgb(44, 204, 151);
+    margin-top: -1rem;
+}
+
+h2 {
+    font-size: 3.3rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 300;
+}
+
+h4 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.section-container button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+section:nth-of-type(3) {
+    background-color: rgb(249, 249, 249);
+}
+
+section:nth-of-type(3),
+section:nth-of-type(4) {
+    margin-top: 3rem;
+}
+
+section:nth-of-type(3) article,
+section:nth-of-type(4) article {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+
+    padding: 1rem;
+}
+
+.article-img {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-img img {
+    display: block;
+    max-width: 19rem;
+    margin: 0 auto;
+}
+
+img[alt="laptop"] {
+    margin-top: 2rem;
+}
+
+.article-div {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.article-div h2 {
+    text-align: left;
+}
+
+@media only screen and (min-width: 600px) {
+    section:nth-of-type(3) article,
+    section:nth-of-type(4) article {
+        padding: 5rem;
+    }
+
+    .article-img img {
+        max-width: 18rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .article-img img {
+        max-width: 20rem;
+    }
+}

@@ -1,0 +1,33 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-column-gap: 5rem;
+    grid-row-gap: 0;
+    text-align: center;
+}
+
+.card:nth-of-type(2) .card-img-round {
+    background-color: rgb(44, 204, 151);
+}
+
+.card-img-round {
+    background-color: rgb(226, 226, 226);
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-round img {
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    .card-img-round {
+        margin-top: 7rem;
+    }
+}
